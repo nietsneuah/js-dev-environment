@@ -10,10 +10,13 @@ const data = obj.data;
 // create a variable that contains the value from element "chartType" from obj(json)
 const chartType = obj.chartType;
 console.log(chartType);
+// Create variables for chartHeight  chartWidth
+const chartHeight = obj.chartHeight;
+const chartWidth  = obj.chartWidth; 
 
 
 const options =  { 
-  size: {height : 360, width  : 420},
+  size: {height : chartHeight, width  : chartWidth},
   bindto: "#chart",
   axis: {
     x: {type: "category" },
